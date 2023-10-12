@@ -35,10 +35,7 @@
 	<p> Press the button to create an new element of type div and then add it to the container.</p>
 		<button onclick="addEnd()">Add end</button>
 	    <button onclick="addFront()">Add Front</button>
-        <button onclick="remove()">Remove</button>
-
-	
-</body>
+        <button onclick="remove()">Remove</button>	
 <script>
 	function addEnd(){
 		element = document.createElement("div")
@@ -48,8 +45,7 @@
 		container = document.getElementById('target')
 		container.appendChild(element)
 	}
-    function remove()
-{
+    function remove(){
     queueItems=document.getElementsByClassName("merger");
     len_ele=queueItems.length;
     if(len_ele>0)
@@ -57,18 +53,14 @@
         queueItems[len_ele-1].remove();
     }
 }
-
-function addFront()
-{
+function addFront(){
     element=document.createElement("div");
     element.innerHTML=document.getElementById("inputElement").value;
     element.style.color="blue";
     element.className="merger";
     container=document.getElementById("target");
     container.insertBefore(element,container.firstChild);
-}
-
-
-	
+}	
 </script>
+</body>
 </html>	
