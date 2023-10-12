@@ -13,7 +13,7 @@
 
   <h2>Manichandra Kuntala Speed Check</h2>
   <div id="target">Your time: </div>
-  <div id="counter">Count: </div>
+  <div id="counter">Count:0</div>
   <button type="button" class="btn btn-primary" onclick="startTime()">Start Timer</button>
   <button type="button" onclick="recordTime()">React</button>
   <script>
@@ -23,6 +23,26 @@
       console.log(reactTime);
     }
     document.getElementById("react").onclick = recordTime;
+    function startTime() {
+    var countdownElement = document.getElementById("countdown");
+
+    for (var i = 0; i < 9; i++) {
+      setTimeout(function () {
+        countdownElement.innerHTML = i;
+      }, i * 1000);
+    }
+
+        setTimeout(function () {
+      if (reactTime === undefined) {
+        
+        document.getElementById("target").innerHTML = "Too Slow";
+      } else {
+                var endTime = Date.now();
+        var elapsedTime = endTime - reactTime;
+        document.getElementById("target").innerHTML = "Time was " + elapsedTime + "ms";
+      }
+    }, 9000); 
+ }
   </script>
 
 </body>
