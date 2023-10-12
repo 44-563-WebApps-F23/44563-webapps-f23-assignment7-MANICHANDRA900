@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> <head>
+    <title>Manichandra Builds a Merger</title> <style>
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color: red;
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color: green;
+	  }
+	}
+</style></head>
+
+
+
+<body>
+    <h1>Manichandra Kuntala Builds a Merger</h1>
+    <input type="text" id="inputElement" placeholder="Enter text">
+    
+		<div class="flex-container" id="target">
+            <div class="merger">Row Item 1</div>   
+            <div class="merger">Row Item 2</div>  
+            <div class="merger">Row Item 3</div>  
+		</div>
+	
+	<p> Press the button to create an new element of type div and then add it to the container.</p>
+		<button onclick="addEnd()">Add end</button>
+	
+	
+</body>
+<script>
+	function addEnd(){
+		let element = document.createElement("div")
+		element.innerHTML = document.getElementById("inputElement").value;
+		element.style.color = "blue"
+        element.className="merger";
+		let container = document.getElementById('target')
+		container.appendChild(element)
+	}
+
+	
+</script>
+</html>	
