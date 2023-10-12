@@ -37,6 +37,19 @@
       </style>
 </head>
 <body>
+  <button type="button" id="new-game-button">New Game</button>
+
+      <script>
+        function newGame() {
+          trapLocation = Math.floor(Math.random() * 25); 
+          do {
+            treasureLocation = Math.floor(Math.random() * 25); 
+       } while (treasureLocation === trapLocation); 
+          document.getElementById("locations").innerHTML = "Number of locations checked is zero.";
+          document.getElementById("penalty").innerHTML = "Penalty is zero.";
+        }
+        document.getElementById("new-game-button").onclick = newGame;
+      </script>
     <header>
         <h1>Find the treasure by Manichandra Kuntala</h1>
     </header>
@@ -221,8 +234,14 @@
      // gameOver=false;
      document.getElementById("locations").textContent="Number of locations checked is 0";
      document.getElementById("penalty").textContent="Penalty is 0";
-     document.getElementById("help").textContent="Click for help"; 
-        </script>
-        </div>    
+     document.getElementById("help").textContent="Click for help";
+     var trapLocation = Math.floor(Math.random() * 25);
+     var treasureLocation;
+     do {
+     treasureLocation = Math.floor(Math.random() * 25);
+     } while (treasureLocation === trapLocation);
+      </script>
+      </div>
+        
 </body>
 </html>

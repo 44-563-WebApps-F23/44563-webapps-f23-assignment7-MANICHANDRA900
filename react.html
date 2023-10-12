@@ -10,26 +10,25 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
   <h2>Manichandra Kuntala Speed Check</h2>
   <div id="target">Your time: </div>
   <div id="counter">Count:0</div>
   <button type="button" class="btn btn-primary" onclick="startTime()">Start Timer</button>
-  <button type="button" onclick="recordTime()">React</button>
+  <button type="button" class="btn btn-primary" onclick="recordTime()">React</button>
+  <button type="button" class="btn btn-primary" onclick="countDown()">Random Start</button>
   <script>
     var reactTime = undefined;
+    var StartCount=9
     function recordTime() {
       reactTime = Date.now();
       console.log(reactTime);
     }
     document.getElementById("react").onclick = recordTime;
-    function startTime() {
-    var countdownElement = document.getElementById("countdown");
-
-    for (var i = 0; i < 9; i++) {
+    function startTime() { 
+    for (var i = 0; i < StartCount; i++) {
       setTimeout(function () {
-        countdownElement.innerHTML = i;
-      }, i * 1000);
+        countdownElement.innerHTML = "Count: "+i},
+         (StartCount-i) * 1000)
     }
 
         setTimeout(function () {
@@ -41,8 +40,12 @@
         var elapsedTime = endTime - reactTime;
         document.getElementById("target").innerHTML = "Time was " + elapsedTime + "ms";
       }
-    }, 9000); 
+    },8000); 
  }
+ function randomStart(){
+        StartCount = Math.floor(Math.random() * (10 - 2 + 1) + 2);
+        startTime();
+    }
   </script>
 
 </body>
