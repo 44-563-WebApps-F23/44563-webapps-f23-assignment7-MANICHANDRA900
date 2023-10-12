@@ -15,7 +15,7 @@
     <style>
         
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial,sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -27,13 +27,13 @@
             padding: 10px;
         }
 
-        #instructions, #locations, #penalty, #help {
+        #instructions, #locations, #penalty, #help{
             background-color: #0ced2a;
             border: 1px solid #0920a1;
             padding: 10px;
             margin: 10px;
             border-radius: 5px;
-          }
+        }
       </style>
 
 </head>
@@ -51,97 +51,187 @@
         <p>Penalty is zero.</p>
     </div>
     
-    <div id="help">
-        <p>Click for help.</p>
+    <div style=" background-color:rgb(13, 237, 39); font-family: sans-serif; font-size: 20px;">
+      <button onclick="help()">Click for help</button>
+  </div>
+  <div id="help" style=" background-color:rgb(20, 236, 67); font-family:sans-serif; font-size: 20px;">
+      Help Report
+  </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+      <img id="img1" width=110 height=110 src="starting-image.jpg" onclick="check(0)">
+      </div>
+      <div class="col-sm-2">
+      <img id="img2" width=110 height=110 src="starting-image.jpg" onclick="check(1)">
     </div>
-    <div id="help">
-        <p>Help report</p>
+    <div class="col-sm-2">
+      <img id="img3" width=110 height=110 src="starting-image.jpg" onclick="check(2)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img4" width=110 height=110 src="starting-image.jpg" onclick="check(3)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img5" width=110 height=110 src="starting-image.jpg" onclick="check(4)">
+    </div>
+    </div>
     </div>
     <div class="container">
-        <div class="row">
-          <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-          </div>
-          <div class="col-sm-2 no-gap">
-         <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-        <img  width=110 height=110  src="starting-image.jpg">
+    <div class="row">
+    <div class="col-sm-2">
+      <img id="img6" width=110 height=110 src="starting-image.jpg" onclick="check(5)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img7" width=110 height=110 src="starting-image.jpg" onclick="check(6)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img8" width=110 height=110 src="starting-image.jpg" onclick="check(7)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img9" width=110 height=110 src="starting-image.jpg" onclick="check(8)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img10" width=110 height=110 src="starting-image.jpg" onclick="check(9)">
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-2">
+      <img id="img11" width=110 height=110 src="starting-image.jpg" onclick="check(10)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img12" width=110 height=110 src="starting-image.jpg" onclick="check(11)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img13" width=110 height=110 src="starting-image.jpg" onclick="check(12)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img14" width=110 height=110 src="starting-image.jpg" onclick="check(13)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img15" width=110 height=110 src="starting-image.jpg" onclick="check(14)">
+    </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-2">
+      <img id="img16" width=110 height=110 src="starting-image.jpg" onclick="check(15)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img17" width=110 height=110 src="starting-image.jpg" onclick="check(16)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img18" width=110 height=110 src="starting-image.jpg" onclick="check(17)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img19" width=110 height=110 src="starting-image.jpg" onclick="check(18)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img20" width=110 height=110 src="starting-image.jpg" onclick="check(19)">
+    </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-2">
+      <img id="img21" width=110 height=110 src="starting-image.jpg" onclick="check(20)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img22" width=110 height=110 src="starting-image.jpg" onclick="check(21)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img23" width=110 height=110 src="starting-image.jpg" onclick="check(22)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img24" width=110 height=110 src="starting-image.jpg" onclick="check(23)">
+    </div>
+    <div class="col-sm-2">
+      <img id="img25" width=110 height=110 src="starting-image.jpg" onclick="check(24)">
+    </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-          </div>
-          <div class="col-sm-2 no-gap">
-         <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-        <img  width=110 height=110  src="starting-image.jpg">
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-          </div>
-          <div class="col-sm-2 no-gap">
-         <img  width=110 height=110  src="starting-image.jpg">
+    </div>
+
+      <script>
+        ids = new Array("img1","img2","img3","img4","img5","img6","img7","img8","img9","img10","img11","img12","img13","img14","img15","img16","img17","img18","img19","img20","img21","img22","img23","img24","img25");
+        checkCount = 0;
+        penalty = 0;
+        lastCheck = 0;
+        treasureLocation = 5;
+        trapLocation = 18;
+        gameOver = false;
+        function check(position){
+          if(gameOver){
+            return;
+          }
+          
+          if(position==treasureLocation){
+            document.getElementById(ids[position]).src="treasure-image.jpg";
+            gameOver = true;
+            penalty -=3;
+          }
+          else if(position==trapLocation){
+            document.getElementById(ids[position]).src="trap-image.jpg";
+            gameOver = true;
+            penalty +=4;
+          }else{
+            document.getElementById(ids[position]).src = "pirate-related-image.jpg";
+          }
+          checkCount++;
+          penalty++;
+          document.getElementById("locations").textContent = "Number of locations checked is " + checkCount;
+          document.getElementById("penalty").textContent = "Penalty is " + penalty;
+          lastCheck=position;
+        }
+        function help()
+    {
+        if(gameOver)
+        {
+            return;
+        }
+        let treasureRow =Math.floor(treasureLocation/5);
+        let treasureCol=treasureLocation%5;
+        let lastRow = Math.floor(lastCheck/5);
+        let lastCol=lastCheck%5; 
+
+        let rowDiff=Math.abs(treasureRow-lastRow);
+        let colDiff=Math.abs(treasureCol-lastCol);
+
+        if((rowDiff===1 && colDiff===0)||(rowDiff===0 && colDiff===1))
+        {
+            document.getElementById('help').textContent='Can smell it';
+        }
+        else if(rowDiff+colDiff===2)
+        {
+            document.getElementById('help').textContent='Close Matie';
+        }
+        else
+        {
+            document.getElementById('help').textContent='Step Faster';
+        }
+        penalty=penalty+2;
+        document.getElementById('penalty').textContent="Penalty is "+penalty;
+        document.getElementById('help').textContent=text;
+    }
+
+     // trapLocation =Math.floor(Math.random()*25);
+     // treasureLocation =Math.floor(Math.random()*25);
+     // checkCount=0;
+     // penalty=0;
+     // lastCheck=0;
+     // gameOver=false;
+     document.getElementById("locations").textContent="Number of locations checked is 0";
+     document.getElementById("penalty").textContent="Penalty is 0";
+     document.getElementById("help").textContent="Click for help";
+
+ 
+
+   
+        </script>
         </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-        <img  width=110 height=110  src="starting-image.jpg">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-          </div>
-          <div class="col-sm-2 no-gap">
-         <img  width=110 height=110  src="starting-image.jpg" >
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-        <img  width=110 height=110  src="starting-image.jpg">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-          </div>
-          <div class="col-sm-2 no-gap">
-         <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-          <img  width=110 height=110  src="starting-image.jpg">
-        </div>
-        <div class="col-sm-2 no-gap">
-        <img  width=110 height=110  src="starting-image.jpg">
-      </div>
+      
     
 </body>
 </html>
